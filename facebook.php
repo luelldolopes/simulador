@@ -57,7 +57,7 @@ if (! isset($accessToken)) {
 			$_SESSION['id'] = $row_usuario['id'];
 			$_SESSION['nome'] = $row_usuario['nome'];
 			$_SESSION['email'] = $row_usuario['email'];
-			header("Location: prova.php");			
+			header("Location: quiz.php");			
 		}
 	} catch(Facebook\Exceptions\FacebookResponseException $e) {
 		echo 'Graph returned an error: ' . $e->getMessage();

@@ -1,6 +1,6 @@
 <?php
 //session_start();
-include_once 'facebook.php';
+//include_once 'facebook.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,7 +8,7 @@ include_once 'facebook.php';
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Celke - Login</title>
+		<title>Simulador - Login</title>
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/signin.css" rel="stylesheet">
 	</head>
@@ -39,11 +39,11 @@ include_once 'facebook.php';
 						<h4>Você ainda não possui uma conta?</h4>
 						<a href="cadastrar.php">Crie grátis</a>
 					</div>
-					<div class="row text-center" style="margin-top: 20px;"> 
+					<!-- <div class="row text-center" style="margin-top: 20px;"> 
 						<a href="<?php echo $loginUrl; ?>">
 							<button type="button" class="btn btn-primary">Facebook</button>
 						</a>
-					</div>
+					</div> -->
 					
 					
 					
