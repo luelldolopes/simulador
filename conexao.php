@@ -1,5 +1,5 @@
 <?php
-	$servidor = "localhost";
+	$servidor = "http://157.230.179.231";
 	$usuario = "root";
 	$senha = "";
 	$dbname = "simulador";
