@@ -1,2 +1,2 @@
 <?php
-	header("Location: quiz.php");
+	header("Location: prova.php");
