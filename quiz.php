@@ -52,19 +52,19 @@ h1{
 }
 .answers label{
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 button{
   font-family: 'Work Sans', sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   background-color: #279;
   color: #fff;
   border: 0px;
   border-radius: 3px;
-  padding: 20px;
+  padding: 14px;
   cursor: pointer;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 30px;
+  margin-top: 50px;
 }
 button:hover{
   background-color: #38a;
