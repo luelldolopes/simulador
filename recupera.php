@@ -23,24 +23,25 @@ if($btnRecuperar){
  
 			      // guardar este par de valores na tabela para confirmar mais tarde
 			      $conf = mysqli_query($conn, "INSERT INTO recuperacao VALUES ('$email', '$chave')");
-				  echo "INSERT INTO recuperacao VALUES ('$email', '$chave')";
+				  //echo "INSERT INTO recuperacao VALUES ('$email', '$chave')";
  
 			      if(mysqli_affected_rows($conn) == 1 ){
 			 
 			        $link = "http://localhost/simulador/alterarSenha.php?utilizador=$email&confirmacao=$chave";
+			        include_once("email.php");
 			 
-				        if( mail($email, 'Recuperação de senha', 'Olá '.$email.', visite este link '.$link) ){
+				   //      if( mail($email, 'Recuperação de senha', 'Olá '.$email.', visite este link '.$link) ){
 
-				        	$_SESSION['msg'] = "<div class='alert alert-success'>Foi enviado um e-mail para o seu endereço</div>";
-							header("Location: recuperarSenha.php");		
+				   //      	$_SESSION['msg'] = "<div class='alert alert-success'>Foi enviado um e-mail para o seu endereço</div>";
+							// header("Location: recuperarSenha.php");		
 				          				 
-				        } else {
-				        	$_SESSION['msg'] = "<div class='alert alert-danger'>Houve um erro ao enviar o email</div>";
-							//header("Location: recuperarSenha.php");			          
-				        }
+				   //      } else {
+				   //      	$_SESSION['msg'] = "<div class='alert alert-danger'>Houve um erro ao enviar o email</div>";
+							// //header("Location: recuperarSenha.php");			          
+				   //      }
 				 
 					// Apenas para testar o link, no caso do e-mail falhar
-					echo '<p>Link: '.$link.' (apresentado apenas para testes; nunca expor a público!)</p>';
+					//echo '<p>Link: '.$link.' (apresentado apenas para testes; nunca expor a público!)</p>';
 			 
 			      } else {
 			      	$_SESSION['msg'] = "<div class='alert alert-danger'>Não foi possível gerar o endereço único</div>";
