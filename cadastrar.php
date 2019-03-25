@@ -84,7 +84,7 @@ if($btnCadUsuario){
 					<input type="text" name="nome" placeholder="Digite o nome e o sobrenome" class="form-control"><br>
 					
 					<!--<label>E-mail</label>-->
-					<input type="text" name="email" placeholder="Digite o seu e-mail" class="form-control"><br>
+					<input type="email" name="email" placeholder="Digite o seu e-mail" class="form-control"><br>
 					
 					<!--<label>Usuário</label>-->
 					<input type="text" name="usuario" placeholder="Digite o usuário" class="form-control"><br>
