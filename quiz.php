@@ -75,7 +75,7 @@ a:link
 text-decoration:none; 
 } 
 
-#tempo { 
+#tempodiv { 
   background-color: yellow;
 }
 
@@ -133,11 +133,11 @@ buttonSair:hover{
 
 
 
-<body translate="no" onload="start();" onload="pisca();" >
-  <h1>Simulador - Detran</h1>
+<body translate="no" onload="start2();" >
+  <h1>Simulador - Detran</h1>
 
 
-  <div id="tempo"></div>
+  <div id="tempodiv"><span id="tempo2"></span></div>
 
 
 <div class="quiz-container">
